@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.bouncer-kick {
+    width: 100%;
+    height: 200px;
+    /* background-color: #dfdfdf; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bouncer-kick div {
+    width: 20px;
+    height: 20px;
+    background-color: #00ffaa;
+    border-radius: 50%;
+    animation-name: kick;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, -0.20);
+    animation-iteration-count: infinite;
+}
+
+.bouncer-kick div:nth-child(2) {
+    animation-delay: 0.1s;
+    opacity: 0.6;
+}
+
+.bouncer-kick div:nth-child(3) {
+    animation-delay: 0.2s;
+    opacity: 0.4;
+}
+
+.bouncer-kick div:nth-child(4) {
+    animation-delay: 0.3s;
+    opacity: 0.2;
+}
+
+@keyframes kick {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
