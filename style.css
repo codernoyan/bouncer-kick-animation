@@ -27,7 +27,7 @@
     background-color: #00ffaa;
     border-radius: 50%;
     animation-name: kick;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, -0.20);
     animation-iteration-count: infinite;
 }
